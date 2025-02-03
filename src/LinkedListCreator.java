@@ -19,6 +19,25 @@ public class LinkedListCreator
         }
     }
 
+    public void changeLastNodeValue()
+    {
+        if(head == null)
+        {
+            System.out.println("list is empty");
+            return;
+        }
+
+        Node current = head;
+        while(current.next != null)
+        {
+            current = current.next;
+        }
+        current.data = 42;
+    }
+
+
+
+
     public void updateAllNodes()
     {
         Node current = head;
@@ -28,7 +47,6 @@ public class LinkedListCreator
             current = current.next;
 
         }
-
     }
 
     @Override
