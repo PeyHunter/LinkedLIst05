@@ -40,6 +40,23 @@ public class Main
         System.out.println(list23);
 
 
+        //LIST24
+        list24.add(1);
+        list24.add(2);
+        list24.add(3);
+        list24.add(4);
+        list24.add(5);
+        list24.add(6);
+        list24.add(7);
+        list24.add(8);
+        list24.add(9);
+        list24.add(0);
+
+        System.out.println(list24);
+        
+        list24.add(42);
+        System.out.println(list24);
+
 
 
     }
