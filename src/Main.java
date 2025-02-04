@@ -27,7 +27,7 @@ public class Main
         list23.add(82);
         list23.add(92);
         list23.add(12);
-        list23.add(4);
+        list23.add(1);
         list23.add(4);
         list23.add(216);
         list23.add(1432);
@@ -53,11 +53,11 @@ public class Main
         list24.add(0);
 
         System.out.println(list24);
-        
+
         list24.add(42);
         System.out.println(list24);
 
-
+        System.out.println(list23.min());
 
     }
 }

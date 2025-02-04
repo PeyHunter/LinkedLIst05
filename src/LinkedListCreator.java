@@ -35,9 +35,6 @@ public class LinkedListCreator
         current.data = 42;
     }
 
-
-
-
     public void updateAllNodes()
     {
         Node current = head;
@@ -49,7 +46,38 @@ public class LinkedListCreator
         }
     }
 
-    @Override
+    public int min()
+    {
+        if(head == null)
+        {
+            throw new IllegalStateException("List is empty");
+        }
+
+        int min = head.data;
+        Node current = head.next;
+
+        while(current != null)
+        {
+            if (current.data < min)
+            {
+                min = current.data;
+            }
+            current = current.next;
+        }
+        return min;
+    }
+
+
+
+
+
+
+
+    public void max()
+    {}
+
+
+        @Override
     public String toString()
     {
         StringBuilder result = new StringBuilder();
