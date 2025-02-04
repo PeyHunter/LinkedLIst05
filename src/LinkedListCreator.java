@@ -68,13 +68,32 @@ public class LinkedListCreator
     }
 
 
+    public int max()
+    {
+        if(head == null)
+        {
+            throw new IllegalStateException("List is empty");
+        }
+
+        int max = head.data;
+        Node current = head.next;
+
+        while(current != null)
+        {
+            if (current.data > max)
+            {
+                max = current.data;
+            }
+            current = current.next;
+        }
+        return max;
+    }
 
 
 
 
 
-    public void max()
-    {}
+
 
 
         @Override

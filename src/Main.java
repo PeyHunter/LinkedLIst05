@@ -54,10 +54,12 @@ public class Main
 
         System.out.println(list24);
 
-        list24.add(42);
+        list24.add(82);
         System.out.println(list24);
 
         System.out.println(list23.min());
+
+        System.out.println(list24.max());
 
     }
 }
