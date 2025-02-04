@@ -61,5 +61,10 @@ public class Main
 
         System.out.println(list24.max());
 
+        System.out.println(list24.sum());
+
+        System.out.println(list23.average());
+
+
     }
 }

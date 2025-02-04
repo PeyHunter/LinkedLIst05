@@ -21,14 +21,14 @@ public class LinkedListCreator
 
     public void changeLastNodeValue()
     {
-        if(head == null)
+        if (head == null)
         {
             System.out.println("list is empty");
             return;
         }
 
         Node current = head;
-        while(current.next != null)
+        while (current.next != null)
         {
             current = current.next;
         }
@@ -48,7 +48,7 @@ public class LinkedListCreator
 
     public int min()
     {
-        if(head == null)
+        if (head == null)
         {
             throw new IllegalStateException("List is empty");
         }
@@ -56,7 +56,7 @@ public class LinkedListCreator
         int min = head.data;
         Node current = head.next;
 
-        while(current != null)
+        while (current != null)
         {
             if (current.data < min)
             {
@@ -70,7 +70,7 @@ public class LinkedListCreator
 
     public int max()
     {
-        if(head == null)
+        if (head == null)
         {
             throw new IllegalStateException("List is empty");
         }
@@ -78,7 +78,7 @@ public class LinkedListCreator
         int max = head.data;
         Node current = head.next;
 
-        while(current != null)
+        while (current != null)
         {
             if (current.data > max)
             {
@@ -89,14 +89,49 @@ public class LinkedListCreator
         return max;
     }
 
+    public int sum()
+    {
+        if (head == null)
+        {
+            throw new IllegalStateException("Empty");
+        }
+
+        int sum = 0;
+        Node current = head.next;
+
+        while (current!= null)
+        {
+           sum += current.data;
+           current = current.next;
+        }
+        return sum;
+    }
 
 
 
+    public double average()
+    {
+       if (head == null)
+       {
+           throw new IllegalStateException("empty");
+       }
+
+       int count = 0;
+       int sum  = 0;
+       Node current = head.next;
+
+       while (current != null)
+       {
+           sum += current.data;
+           count++;
+           current = current.next;
+       }
+
+       return (double) sum / count;
+    }
 
 
-
-
-        @Override
+    @Override
     public String toString()
     {
         StringBuilder result = new StringBuilder();
